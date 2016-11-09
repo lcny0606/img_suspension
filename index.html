@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+		body,html{
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+			font-family:'Open Sans',sans-serif;
+			font-weight:300;
+			overflow: auto;
+		}
+		
+		.container{
+			padding:20px;
+			position:relative;
+			overflow: hidden;
+		}
+
+		img{
+
+			height:200px;
+			transition:.5s ease-in-out;
+			
+		}
+
+		img:hover+p{
+			bottom:-10px;
+			opacity:1;
+		}
+
+		h2{
+			font-size:30px;
+			line-height:40px;
+			font-weight:300;
+			color:#333;
+			margin-left:40px;
+		}
+
+		p{
+			width:300px;
+			position:relative;
+			text-align: center;
+			bottom:40px;
+			transition:.5s ease-in-out;
+			opacity:0;
+			z-index:0;
+		}
+
+		.container div{
+			width: 300px;
+			
+			overflow: hidden;
+			float:left;
+			margin-left:40px;
+		}
+
+		.scaleBig img:hover{
+			transform:scale(1.2);
+		}
+
+		.grayScale img{
+			filter:grayscale(100%);
+			-webkit-filter:grayscale(100%);
+		}
+
+		.grayScale img:hover{
+			filter:grayscale(0%);
+			-webkit-filter:grayscale(0%);
+		}
+
+		.blur img{
+			filter:blur(5px);
+			-webkit-filter:blur(5px);
+		}
+
+		.blur img:hover{
+			filter:blur(0);
+			-webkit-filter:blur(0);
+		}
+
+		.sepia img{
+			filter:sepia(100%);
+			-webkit-filter:sepia(100%);
+		}
+
+		.sepia img:hover{
+			filter:sepia(0);
+			-webkit-filter:sepia(0);
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="scaleBig container">
+		<h2>1.Scale Big</h2>
+		<div>
+			<img src="./images/img_1.png"/>
+			<p>Hover</p>
+		</div>
+		<div>
+			<img src="./images/img_2.png"/>
+			<p>Hover</p>
+		</div>
+		
+	</div>
+
+	<div class="grayScale container">
+		<h2>2.Gray Scale</h2>
+		<div>
+			<img src="./images/img_1.png"/>
+			<p>Hover</p>
+		</div>
+		<div>
+			<img src="./images/img_2.png"/>
+			<p>Hover</p>
+		</div>
+		
+	</div>
+
+	<div class="blur container">
+		<h2>3.Blur Scale</h2>
+		<div>
+			<img src="./images/img_1.png"/>
+			<p>Hover</p>
+		</div>
+		<div>
+			<img src="./images/img_2.png"/>
+			<p>Hover</p>
+		</div>
+		
+	</div>
+
+	<div class="sepia container">
+		<h2>4.Sepia Scale</h2>
+		<div>
+			<img src="./images/img_1.png"/>
+			<p>Hover</p>
+		</div>
+		<div>
+			<img src="./images/img_2.png"/>
+			<p>Hover</p>
+		</div>
+		
+	</div>
+</body>
+</html>
